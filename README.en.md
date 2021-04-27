@@ -1,7 +1,7 @@
-# h5-diy
+# 管理及商户后台
 
 #### Description
-组件diy
+管理及商户后台2合1
 
 #### Software Architecture
 Software architecture description

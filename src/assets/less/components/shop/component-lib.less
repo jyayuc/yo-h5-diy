@@ -1,0 +1,45 @@
+.nav-title{
+    border-bottom: 2px solid #E8E8E8;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #000000;
+    text-indent: 26px;
+    height: 60px;
+    line-height: 60px;
+}
+.left-box{
+    width: 240px;
+    min-width: 240px;
+    height: 667px;
+    background-color: #fff;
+    // border-right: 2px solid #E8E8E8;
+    .tab-pane-component{
+        padding: 14px 23px;
+        overflow: hidden;
+        .component-box{
+            margin-bottom: 16px;
+            margin-right: 14px;
+            float: left;     
+            cursor: move;
+            &:nth-child(2n+2){
+                margin-right: 0;
+            }
+            &:hover{
+                box-shadow: 0 0 10px 0 rgba(0,0,0,0.10);
+            }
+        }
+        .component{
+            width: 89px;
+            height: 89px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            &.scale{
+                transform: scale(1.2);
+                background-size: cover;
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }            
+}

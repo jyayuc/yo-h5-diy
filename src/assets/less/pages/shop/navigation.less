@@ -1,0 +1,280 @@
+@import "./shop.less";
+@import "../../components/common/swiper.less";
+.shop-navigation{
+    .navigation-content{
+        padding: 0;
+        display: flex;
+        background: #FBFBFB;
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.05);
+        border-radius: 2px;
+        .left-box{
+            // float: left;
+            flex: 1;
+            // border: 1px solid red;
+            width: 375px;
+            min-width: 375px;
+            // height: 667px;
+            display: flex;
+            flex-direction: column;
+            .bg-box{
+                position: relative;
+                width: 375px;
+                height: 667px;
+                margin: 47px auto 61px;
+                background-repeat: no-repeat;
+                background-size: 375px 667px;
+                background-position: center;
+                // background-image: url(../../images/demo/nav-bg.jpg);
+                .bg-box-top{
+                    // flex: 1;
+                    height:37px;
+                    line-height:37px;
+                    position: absolute;
+                    text-align: center;
+                    top:0;
+                    left: 0;
+                    width:100%;
+                }
+            }
+        }        
+        .center-box{
+            flex: 1;
+            border-right: 2px solid #E8E8E8;
+            border-left: 2px solid #E8E8E8;
+            min-width: 390px;
+            // height: 767px;
+            .navigation-box{
+                position: relative;
+                width: 375px;
+                height: 500px;
+                margin: 31px auto;
+                background-repeat: no-repeat;
+                background-size: 375px 667px;
+                background-position: center top;
+                box-shadow: 0 0 8px 0 rgba(0,0,0,0.10);
+            }
+            // .component-box{
+            //     height: 667px;
+            //     margin: 31px auto;
+            //     width: 400px;
+            //     position: relative;
+            //     padding-bottom: 45px;
+            //     overflow-y: scroll;
+            // }
+            // .component-show-box{
+            //     // width: 390px;
+            //     width: 375px;
+            //     position: relative;
+            //     // height: 667px;
+            //     // margin: 31px  auto;
+            //     // overflow-y: scroll;
+            //     background: #fff;
+            //     box-shadow: 0 0 8px 0 rgba(0,0,0,0.10);
+            //     .el-icon-d-arrow-left,.el-icon-d-arrow-right{
+            //         width: 36px;
+            //         height: 36px;
+            //         line-height: 36px;
+            //         display: block;
+            //         background: #FFFFFF;
+            //         box-shadow: 0 2px 10px 0 rgba(185,185,185,0.19);
+            //         border-radius: 2px;
+            //         // padding: 18px;
+            //         position: absolute;
+            //         right: -44px;
+            //         text-align: center;
+            //     }
+            //     .el-icon-d-arrow-left{
+            //         top:0;
+            //     }
+            //     .el-icon-d-arrow-right{                    
+            //         top:44px;
+            //     }
+            // }
+            // .component-drag-box{                
+            //     // margin: 31px  auto;
+            //     min-height: 300px;
+            //     .component-drag{
+            //         margin: 0 auto;
+            //         width: 375px;
+            //     }
+            // }
+            // .component-page-info {
+            //     margin: 0 auto;
+            //     width: 375px;
+            //     &.active{
+            //         border: 2px solid rgba(51,102,255,0.70);
+            //     }
+            // }
+            // .component-drag{
+            //     position: relative;  
+            //     cursor: move;      
+            //     &.active,&:hover{
+            //         .el-icon-delete{
+            //             display: block;
+            //             color: #fff;
+            //         }
+            //         .border{
+            //             display: block;
+            //         }
+            //     }
+            //     .new{
+            //         // height: 120px;
+            //         height: 40px;
+            //         overflow: hidden;
+            //         background: rgba(51,102,255,0.40);
+            //         border: 1px solid #3366FF;
+            //         *{
+            //             opacity: 0;
+            //         }
+            //     }
+            //     .border{
+            //         border: 2px solid rgba(51,102,255,0.70);
+            //         display: none;
+            //         position: absolute;
+            //         left: 0;
+            //         top: 0;
+            //         pointer-events: none;
+            //         z-index:9;
+            //         width: 100%;
+            //         height: 100%;
+            //     }
+            //     .component-unit{
+            //         cursor: move;
+            //         // border: 2px solid rgba(0,0,0,0); 
+            //     }
+            //     .component-unit + div{
+            //         z-index: -2;
+            //     }
+            //     .component-scale{
+            //         opacity: .01;
+            //         .component-unit{
+            //             // border: 2px solid rgba(51,102,255,0.70); 
+            //             box-shadow: 0 0 8px 0 rgba(0,0,0,0.05);
+            //             transform: scale(1.1);
+            //             // width: 375px;
+            //             width: 390px;
+            //             background: #fff;
+            //             overflow: hidden;
+            //             // display:none;
+            //         }
+            //     }
+            //     .el-icon-delete{
+            //         display:none;
+            //         position: absolute;
+            //         right: 0;
+            //         top: 0;
+            //         z-index: 3;
+            //         padding:1px 1px 2px 2px;
+            //         text-align: center;
+            //         // height: 20px;
+            //         font-size: 14px; 
+            //         background: #3366FF;  
+            //         cursor: pointer;                                  
+            //     }
+            // }
+        }
+        .right-box{
+            // float: left;
+            width: 320px;
+            min-width: 320px;
+            background-color: #fff;
+            border-left: 2px solid #E8E8E8;
+            .nav-title{
+                border-bottom: 2px solid #E8E8E8;
+                font-family: PingFangSC-Medium;
+                font-size: 14px;
+                color: #000000;
+                text-indent: 26px;
+                height: 60px;
+                line-height: 60px;
+            }
+            // .add-btn{
+            //     margin: 32px auto;
+            //     // float: left;
+            //     display: block;
+            //     // background: #3366FF;
+            //     // border-radius: 2px;
+            //     // height:32px;
+            //     // line-height: 32px;
+            //     // padding:0 17px;
+            //     // font-family: PingFangSC-Semibold;
+            //     // font-size: 14px;
+            //     .el-icon-plus{
+            //         font-weight: 900;
+            //     }
+            // }
+            .right-box-list{
+                .drag{
+                    padding:25px;
+                    border-bottom: 2px solid #E8E8E8;
+                    // width: 200px;
+                    // background-color: #000;
+                    // color: #fff;
+                    // border: 1px solid #ff0;
+                    // *{
+                    //    pointer-events: none; 
+                    // }
+                    &.active,&:hover{
+                        border:2px solid #3366FF;
+                        cursor: pointer;
+                    }
+                    .nav-form{
+                        li{
+                            margin: 13px auto;
+                            display: flex;
+                            align-content: space-between;
+                            height: 32px;
+                            line-height: 32px;
+                        }
+                        .nav-tag{
+                            // width:50px;
+                            flex:1;
+                            font-family: PingFangSC-Regular;
+                            font-size: 14px;
+                            color: rgba(51,51,51,0.90);
+                        }
+                        .nav-icon-img{
+                            margin-top:8px;
+                            margin-left: 13px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .nav-icon-btn{
+                            line-height:0;
+                            margin-left: 13px;
+                            font-family: PingFangSC-Regular;
+                            font-size: 12px;
+                            color: #3366FF;
+                        }
+                        .el-input__inner{
+                            height: 32px;
+                            line-height: 32px;
+                        }
+                        .el-input__suffix{
+                            top:3px;
+                        }
+                        .el-icon-delete{
+                            // float: right;
+                            // flex: 1;
+                            padding-top: 8px;
+                            padding-left: 15px;
+                            // cursor: pointer;
+                            // color: #3366FF;
+                            font-weight: 900;
+                        }
+                        .nav-name,.nav-select{
+                            float: right;
+                            flex: 1;
+                        }
+                        .nav-label{
+                            width:30px;
+                            font-family: PingFangSC-Regular;
+                            font-size: 12px;
+                            color: rgba(102,102,102,0.90);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

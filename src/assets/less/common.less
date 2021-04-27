@@ -1,0 +1,161 @@
+// 导入全局变量
+@import "other/variables.less";
+
+// 导入混合宏
+@import "mixins/mixins.less";
+@fontSize:20px;
+
+//引入阿里图标字体
+@import "//at.alicdn.com/t/font_2091906_d9xnboc6ii.css";
+
+.start-gpu(){
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  // -webkit-perspective: 1000;
+  // -moz-perspective: 1000;
+  // -ms-perspective: 1000;
+  // perspective: 1000;
+
+//   /**webkit上也可以用以下语句  **/
+//  -webkit-transform: translate3d(0, 0, 0);
+//  -moz-transform: translate3d(0, 0, 0);
+//  -ms-transform: translate3d(0, 0, 0);
+//  transform: translate3d(0, 0, 0);
+}
+.touch(){
+  -webkit-overflow-scrolling: touch;
+        .start-gpu();
+        touch-action: auto;
+        overflow-y: auto;
+        overflow-x: auto;
+}
+.touch-y(){
+  -webkit-overflow-scrolling: touch;
+        .start-gpu();
+        touch-action: pan-y;
+        overflow-y: auto;
+        overflow-x: hidden;
+}
+.touch-x(){
+  -webkit-overflow-scrolling: touch;
+  .start-gpu();
+  touch-action: pan-x;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll-y{
+  .touch-y;
+  .posf;
+  top:44px;
+  left:0;
+  right: 0;
+  bottom: 0;
+}
+
+.active(){
+  .posr;
+  &::after{
+    .posa;
+    content: '';
+    top:-6px;
+    left:-6px;
+    bottom: -6px;
+    right:-6px;
+    // .p(10px);
+  }
+  &:active{
+    &::after{
+      .bc(@hover);
+    }
+  }
+}
+.pointer{
+	.userselect;
+	cursor: pointer;
+}
+.click(){
+	.userselect;
+	cursor: pointer;
+  .active;
+  &:hover{
+    // .tranf(scale(1.1));
+    // .tranf(scale(1.1));
+    .tran(all 0.1s ease-in-out);
+    .tranf(translate(-2px,0));
+  }
+}
+
+.bg-img(){
+  .bp(center);
+	.bz(contain);
+	background-repeat: no-repeat;
+}
+
+.ellipsis{
+  text-overflow: ellipsis;
+  .oh;
+  white-space: nowrap;
+}
+.ellipsis2{
+  text-overflow: ellipsis;/*文本溢出时显示省略标记*/
+  .oh;
+  // white-space: nowrap;
+  .db(-webkit-box);/*设置弹性盒模型*/
+  -webkit-line-clamp: 2;/*文本占的行数,如果要设置2行加...则设置为2*/
+  -webkit-box-orient: vertical;/*子代元素垂直显示*/
+}
+
+
+  .com-no-data{
+    .tc;
+    .posr;
+    .com-no-data-text{
+      display: inline-block;
+      .p(50px 120px);
+      .fz(12);
+      .c(#fff);
+      .bc(rgba(0,0,0,.7));
+      border-radius: 8px;
+      .posa;
+      top: 50%;
+      left: 50%;
+      .m(-62px auto auto -168px);
+      a{
+       .c(@themes);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .com-no-data-icon2{
+    display: inline-block;
+    .w(700px);
+    .m(40px auto -110px auto);
+    img{
+      width: 100%;
+    }
+    a{
+     .c(@themes);
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .com-no-data-text2{
+    display: block;
+    .tc;
+    .fz(12);
+    .c(#333);
+    .pb(110px);
+    a{
+     .c(@themes);
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }

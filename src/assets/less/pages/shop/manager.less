@@ -1,0 +1,221 @@
+@import "./shop.less";
+.shop-page-manager{
+    .shop-page-header-box{
+        padding:0 24px;
+        .shop-page-header{
+            height: 72px!important;
+            line-height: 72px;
+            opacity: 0.87;
+            font-family: PingFangSC-Medium;
+            font-size: 18px;
+            color: #000000;
+            letter-spacing: 0;
+        }
+        .shop-page-op-box{
+            background-color: #fff;
+            height: 56px;
+            line-height:56px;
+        }
+    }
+    .add-btn{
+        margin: 12px 24px;
+        float: left;
+        // background: #3366FF;
+        // border-radius: 2px;
+        // height:32px;
+        // line-height: 32px;
+        padding:0 17px;
+        // font-family: PingFangSC-Semibold;
+        // font-size: 14px;
+        .el-icon-plus{
+            font-weight: 900;
+        }
+    }
+    .el-input{
+        &.search-box{
+            float: right;
+            margin: 12px 24px;
+            width: 150px;
+            height: 32px;
+            line-height: 32px;
+            .el-input__inner{
+                border:1px solid red;
+                border:none!important;
+                height: 32px;
+                line-height: 32px;
+            }
+            .el-input__prefix{
+                top:-2px;
+            }
+        }
+    }
+    .shop-page-table{
+        thead{
+            tr{
+                th{
+                    height: 48px;
+                    background-color: #FAFAFA;
+                    font-family: PingFangSC-Medium;
+                    font-size: 14px;                    
+                    color: #333;
+                    &:first-child{
+                        text-indent:10px;
+                    }
+                    &:nth-child(4){
+                        padding-right: 89px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    height:56px;
+                    line-height:56px;
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    color: #333333;
+                    &:first-child{
+                        text-indent:10px;
+                    }
+                    &:last-child{
+                        padding-right: 32px;
+                        text-align: right;
+                    }
+                    .el-button--text{
+                        font-family: PingFangSC-Regular;
+                        font-size: 12px;
+                        color: #3366FF;
+                    }
+                    .more-btn{
+                        margin-left: 16px;
+                        padding: 0;
+                    }
+                    .shop-icon-home{
+                        background: #FA607E;
+                        border-radius: 100px;
+                        font-family: PingFangSC-Semibold;
+                        font-size: 10px;
+                        color: #FFFFFF;
+                        letter-spacing: 0.31px;
+                        font-style: normal;
+                        padding: 1px 10px;
+                        transform: scale(0.5);
+                    }
+                }
+            }
+        }
+    }
+    .pager-box{
+        height: 56px;
+        // line-height: 56px;
+        overflow: hidden;
+        background: #fff;
+        .el-pagination,.jump-pager{
+            margin-top: 12px;
+        }
+        .jump-pager{
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: 0;
+            .count-input{
+                // background: #FFFFFF;
+                width: 60px;
+                .el-input__inner{
+                    margin-left: 8px;
+                    border: 1px solid #D9D9D9;
+                    border-radius: 2px;
+                    width: 48px;
+                    text-align: center;
+                    height: 32px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+    .left-pager{
+        float: left;
+    }
+    .right-pager{
+        float: right;
+        margin-right: 32px;
+        .total-pager{
+            float: left;
+        }
+        .jump-pager{
+            float: left;
+        }
+        .count-pager{
+            float: left;
+        }
+        .el-pager{
+            li{
+                font-family: HelveticaNeue;
+                font-size: 14px;
+                color: #999999;
+                &.active{
+                    font-family: HelveticaNeue-Bold;
+                    color: #3366FF;
+                }
+            }
+        }
+    }
+    .el-dialog{
+        .download-btn{
+            text-align: center;
+            width: 270px;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #3366FF;
+        }
+        .image-box{
+            width: 168px;
+            margin: 0 auto;
+            text-align: center;
+            img{
+                width: 168px;
+                height: 168px;
+            }
+        }
+        .el-input{
+            height: 32px;
+            .el-input__inner{
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #BFBFBF;                
+            }
+            .el-button{
+                background: #3366FF;
+                border-radius: 0 2px 2px 0;
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #FFFFFF;
+                padding: 0 18px;
+            }
+        }
+    }
+}
+.shop-page-popover{
+    // width: 142px;
+    padding: 8px 0;
+    .operate-list{
+        li{
+            text-indent: 16px;
+            height: 32px;
+            line-height: 32px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+    }
+    // .el-button--text{
+    //     height: 32px;
+    //     font-family: PingFangSC-Regular;
+    //     font-size: 12px;
+    //     color: #3366FF;
+    //     display: block;
+    // }
+}

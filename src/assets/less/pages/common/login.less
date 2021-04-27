@@ -1,0 +1,269 @@
+
+// 引入全局方法
+@import "../../common.less";
+.tm-login-page{
+	// height: 100%;
+	.h(100%);
+	// background: url() 0% 0% / cover no-repeat;
+	.bg-img;
+	.bi('/static/img/demo2.png');
+	.bz(cover);
+	.posf;
+	// position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+  .logo{
+    .wh(100,100);
+    .posa;
+    top: 50%;
+    left: 50%;
+		.tranf(translate(-50%,-46%));
+    margin-top: -300px;
+    img{
+      width: 100%;
+    }
+  }
+	.login-form{
+		.wh(428;576);
+		// width:428px;
+		// height: 576px;
+		top: 53%;
+		left: 50%;
+		.posa;
+		// position: absolute;
+		.tranf(translate(-50%,-46%));
+		// -moz-transform: translate(-50%,-50%);
+		// -ms-transform: translate(-50%,-50%);
+		// -o-transform: translate(-50%,-50%);
+		// transform: translate(-50%,-50%);
+		// overflow: hidden;
+		.oh;
+		.top{
+			.wh(428;117);
+			// width: 428px;
+			// height: 117px;
+			background: linear-gradient(to right,#0a9fad,#28b9c6);
+			// border-radius: 12px 12px 0 0;
+			.br-top(12px);
+			font-family: SourceHanSansCN-Regular;
+			// font-size: 30px;
+			.fz(26);
+			.fw(400);
+			// font-weight: 400;
+			font-stretch: normal;
+			letter-spacing: 0;
+			.c(@white);
+			// color: #fff;
+			.lh(117);
+			// line-height: 117px;
+			.tc;
+			.oh;
+			// text-align: center;
+			// overflow: hidden;
+			.tranf(rotate(0));
+			// -webkit-transform: rotate(0);
+			// -moz-transform: rotate(0);
+			// -ms-transform: rotate(0);
+			// -o-transform: rotate(0);
+			// transform: rotate(0);
+			.bg1{
+				.dib;
+				.squ(74);
+				// display: inline-block;
+				// width: 74px;
+				// height: 74px;
+				.bc(@white);
+				// background: #fff;
+				opacity: .1;
+				.br-right(74);
+				// border-radius: 0 74px 0 0;
+				// position: absolute;
+				.posa;
+				left: 0;
+				top: 43px;
+			}
+			.bg2{
+				// display: inline-block;
+				.dib;
+				.squ(94);
+				// width: 94px;
+				// height: 94px;
+				.bc(@white);
+				// background: #fff;
+				opacity: .1;
+				.br(50%);
+				// border-radius: 50%;
+				// position: absolute;
+				.posa;
+				right: -16px;
+				top: -16px;
+			}
+		}
+		.bottom{
+			.w(428);
+			.bc(@white);
+			// width: 428px;
+			// background: #fff;
+			.br-bottom(12px);
+			// border-radius: 0 0 12px 12px;
+			// .pb(53);
+			.p( 30px 50px);
+			.el-form-item{
+				&.bottom-box{
+					.df;
+					.mt(40);
+					.el-form-item__content{
+						.flex(1);
+						.df;
+						justify-content: space-between;
+						align-items: center;
+						.el-checkbox{
+							.db;
+							.flex(1);
+							.el-checkbox__label{
+								.fz(12);
+								.c(@gray9);
+								.ml(5);
+							}
+						}
+						.router-link-active{
+							.db;
+							.fz(12);
+							.c(@themes);
+						}
+					}
+				}
+				.el-input{
+					i{
+						.fz(16);
+						.c(@grayD);
+					}
+					.el-input__inner{
+						// .borb(1px solid @grayE);
+						.bort(0);
+						.borl(0);
+						.borr(0);
+					}
+				}
+				.el-button{
+					.w(288);
+					.m(0 auto);
+					.db;
+					.br(15px);
+			    background: linear-gradient(to right,#0a9fad,#28b9c6);
+				}
+			}
+			// padding-bottom: 53px;
+			// .center{
+			// 	.w(288);
+			// 	// width: 288px;
+			// 	.m(0 auto);
+			// 	// margin: 0 auto;
+			// 	.pt(40);
+			// 	.pb(15);
+			// 	// padding-top: 40px;
+			// 	// padding-bottom: 15px;
+			// 	position: relative;
+			// 	.posr;
+			// 	// .item {
+			// 	//     width: 288px;
+			// 	//     height: 35px;
+			// 	//     border-bottom: 1px solid #dae1e6;
+			// 	//     margin-bottom: 35px;
+			// 	// 	input {
+			// 	// 	    display: inline-block;
+			// 	// 	    width: 227px;
+			// 	// 	    height: 22px;
+			// 	// 	    padding: 0;
+			// 	// 	    position: absolute;
+			// 	// 	    border: 0;
+			// 	// 	    outline: 0;
+			// 	// 	    font-size: 14px;
+			// 	// 	    letter-spacing: 0;
+			// 	// 	}
+			// 	// 	.icon {
+			// 	// 	    display: inline-block;
+			// 	// 	    width: 33px;
+			// 	// 	    height: 22px;
+			// 	// 		background-image: url(https://oem.faisys.com/image/icon/icon-login.png);
+			// 	// 		background-repeat: no-repeat;
+			// 	// 		&.icon-1 {
+			// 	// 			background-position:1px 0;
+			// 	// 		}
+			// 	// 		&.icon-2 {
+			// 	// 			background-position:-54px 0;
+			// 	// 		}
+			// 	// 		&.icon-3 {
+			// 	// 			background-position:-106px 0;
+			// 	// 		}
+			// 	// 		&.icon-4 {
+			// 	// 			background-position:0 -43px;
+			// 	// 		}
+			// 	// 	}
+			// 	// }
+			// 	// .error {
+			// 	//     position: absolute;
+			// 	//     height: 26px;
+			// 	//     line-height: 25px;
+			// 	//     width: 264px;
+			// 	//     border: 1px solid #fdd3d3;
+			// 	//     bottom: 8px;
+			// 	//     padding-left: 33px;
+			// 	//     color: #e63333;
+			// 	//     display: none;
+			// 	//     background: url(https://oem.faisys.com/image/login_icon.png) -104px -50px no-repeat #feefef;
+			// 	// }
+			// }
+			// .tip {
+			//     clear: both;
+			//     height: 16px;
+			//     line-height: 16px;
+			//     width: 288px;
+			//     margin: 0 auto;
+			// 	.icon-nocheck {
+			// 	    display: inline-block;
+			// 	    width: 10px;
+			// 	    height: 10px;
+			// 	    border-radius: 2px;
+			// 	    border: solid 1px #9abcda;
+			// 	    position: relative;
+			// 	    top: 2px;
+			// 	    margin: 1px 8px 1px 1px;
+			// 	    cursor: pointer;
+			// 	}
+			// 	.login-tip {
+			// 	    font-family: MicrosoftYaHei;
+			// 	    font-size: 12px;
+			// 	    font-weight: 400;
+			// 	    font-stretch: normal;
+			// 	    letter-spacing: 0;
+			// 	    color: #9abcda;
+			// 	    cursor: pointer;
+			// 	}
+			// 	.no-pwd {
+			// 	    font-stretch: normal;
+			// 	    letter-spacing: 0;
+			// 	    color: #1391ff;
+			// 	    text-decoration: none;
+			// 	    position: absolute;
+			// 	    right: 62px;
+			// 	}
+			// }
+			// .deal {
+			//     width: 288px;
+			//     height: 40px;
+			// 	background: linear-gradient(to right,#5aad6e,#039fa7);
+			//     border-radius: 16px;
+			//     margin: 24px auto 0;
+			//     text-align: center;
+			//     line-height: 40px;
+			//     color: #fff;
+			//     font-size: 14px;
+			//     letter-spacing: 0;
+			//     cursor: pointer;
+			// }
+		}
+	}
+}
